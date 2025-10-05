@@ -1,0 +1,45 @@
+.save-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #B3E5FC;
+    color: #303d53;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(179, 229, 252, 0.3);
+    font-family: inherit;
+}
+
+.save-btn:hover:not(.disabled) {
+    background: #81D4FA;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(179, 229, 252, 0.4);
+}
+
+.save-btn.saved {
+    background: #303d53;
+    color: #B3E5FC;
+    box-shadow: 0 4px 12px rgba(48, 61, 83, 0.3);
+}
+
+.save-btn.saved:hover:not(.disabled) {
+    background: #1e293b;
+    box-shadow: 0 6px 16px rgba(48, 61, 83, 0.4);
+}
+
+.save-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.bookmark-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}

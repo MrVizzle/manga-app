@@ -1,0 +1,88 @@
+/* .saved-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.saved-page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 50px;
+  padding: 15px;
+  color: #303d53;
+}
+
+.saved-manga-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+} */
+
+.saved-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  max-width: 1400px; /* Container max width for breathing room */
+  margin: 0 auto; /* Center the container */
+}
+
+.saved-page-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 40px;
+  color: #303d53;
+}
+
+.saved-manga-grid {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  padding: 0 20px; /* Additional side padding for breathing room */
+  
+  /* Mobile first - 1 column */
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  margin: 0 16px;
+}
+
+/* Small tablets - 2 columns */
+@media (min-width: 640px) {
+  .saved-manga-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+    gap: 20px;
+  }
+}
+
+/* Large tablets - 3 columns */
+@media (min-width: 900px) {
+  .saved-manga-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 950px;
+    gap: 24px;
+  }
+}
+
+/* Desktop - 4 columns (max) */
+@media (min-width: 1200px) {
+  .saved-manga-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1280px;
+    gap: 28px;
+  }
+}
+
+/* Extra breathing room on very large screens */
+@media (min-width: 1600px) {
+  .saved-page {
+    padding: 40px;
+  }
+  
+  .saved-manga-grid {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,114 @@
+/* --- Modal Container --- */
+.save-manga-modal .modal-content {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* Header */
+.save-manga-modal .modal-header {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  justify-content: center;
+}
+
+.save-manga-modal .modal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Body Layout */
+.save-manga-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Label Styling */
+.save-manga-modal label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Dropdown buttons (orange pill look) */
+.save-manga-modal .dropdown-toggle {
+  background-color: #f39c12 !important; /* orange */
+  color: white !important;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.save-manga-modal .dropdown-toggle:hover {
+  background-color: #e67e22 !important;
+}
+
+/* Error text */
+.save-manga-modal .error-text {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+/* Footer buttons */
+.save-manga-modal .modal-footer {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-manga-modal .btn-cancel {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  border: none;
+}
+
+.save-manga-modal .btn-cancel:hover {
+  background-color: #dcdcdc;
+}
+
+.save-manga-modal .btn-save {
+  background-color: #3498db;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  border: none;
+}
+
+.save-manga-modal .btn-save:hover {
+  background-color: #2980b9;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 576px) {
+  .save-manga-modal .modal-dialog {
+    margin: 1rem;
+  }
+
+  .save-manga-modal .modal-body {
+    gap: 1rem;
+  }
+
+  .save-manga-modal .dropdown-toggle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .save-manga-modal .modal-footer {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .save-manga-modal .btn-cancel,
+  .save-manga-modal .btn-save {
+    width: 100%;
+  }
+}

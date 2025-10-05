@@ -1,0 +1,157 @@
+.non-logged-in-saved-page {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Main Card */
+.non-logged-in-card {
+    border-radius: 24px !important;
+    background: white;
+}
+
+.non-logged-in-card .card-body {
+    background: white;
+    border-radius: 24px !important;
+}
+
+/* Lock Icon */
+.lock-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lock-svg {
+    color: #64748b;
+    opacity: 0.8;
+}
+
+/* Text Content */
+.auth-prompt-title {
+    color: #303d53;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.auth-prompt-text {
+    color: #64748b;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Custom Buttons */
+.auth-btn-primary {
+    background-color: #303d53 !important;
+    border-color: #303d53 !important;
+    font-weight: 500;
+    border-radius: 12px !important;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.auth-btn-primary:hover, 
+.auth-btn-primary:focus {
+    background-color: #1e293b !important;
+    border-color: #1e293b !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(48, 61, 83, 0.2) !important;
+    text-decoration: none;
+}
+
+.auth-btn-secondary {
+    color: #303d53 !important;
+    border-color: #e2e8f0 !important;
+    background-color: #f1f5f9 !important;
+    font-weight: 500;
+    border-radius: 12px !important;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.auth-btn-secondary:hover, 
+.auth-btn-secondary:focus {
+    color: #303d53 !important;
+    background-color: #e2e8f0 !important;
+    border-color: #cbd5e1 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(48, 61, 83, 0.1) !important;
+    text-decoration: none;
+}
+
+/* Override Bootstrap link styles */
+.auth-btn-primary:link,
+.auth-btn-primary:visited,
+.auth-btn-secondary:link,
+.auth-btn-secondary:visited {
+    text-decoration: none;
+}
+
+/* Ensure saved-page-title is consistent */
+.non-logged-in-saved-page .saved-page-title {
+    color: #303d53;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .non-logged-in-saved-page .saved-page-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .auth-prompt-title {
+        font-size: 1.5rem;
+    }
+    
+    .auth-prompt-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .lock-svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 576px) {
+    .non-logged-in-saved-page .saved-page-title {
+        font-size: 1.75rem;
+    }
+    
+    .auth-prompt-title {
+        font-size: 1.3rem;
+    }
+    
+    .auth-prompt-text {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+    
+    .lock-svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .non-logged-in-card .card-body {
+        padding: 2rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .auth-prompt-text {
+        padding: 0 0.5rem;
+    }
+    
+    .non-logged-in-card .card-body {
+        padding: 1.5rem 1rem !important;
+    }
+}

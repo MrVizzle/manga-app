@@ -1,0 +1,83 @@
+.saved-manga-card {
+  position: relative;
+  width: 200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(48, 61, 83, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.saved-manga-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(48, 61, 83, 0.15);
+}
+
+/* Cover */
+.saved-manga-cover {
+  width: 100%;
+  height: 325px;
+  position: relative;
+  overflow: hidden;
+}
+
+.saved-manga-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info */
+.saved-manga-info {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.saved-manga-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #303d53;
+}
+
+.saved-manga-progress {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.saved-manga-status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 12px;
+  background: #b3e5fc;
+  color: #303d53;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Dropdown Menu */
+.saved-manga-menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 50; /* ensure it's above the card */
+}
+
+.saved-manga-menu .menu-toggle {
+  background: #303d53 !important;
+  border: none !important;
+  color: white !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+
+.saved-manga-menu .menu-toggle:hover,
+.saved-manga-menu .menu-toggle:focus {
+  background: #3f4e6b !important;
+} 

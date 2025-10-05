@@ -1,0 +1,182 @@
+/* Main Container */
+.credits-page {
+    padding: 15rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+}
+
+.credits-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(48, 61, 83, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header */
+.credits-title {
+    color: #303d53;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Dividers */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+    margin: 2rem 0;
+}
+
+/* API Credit Section */
+.api-credit-section {
+    margin: 2rem 0;
+}
+
+.api-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.api-title {
+    color: #303d53;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.api-badge {
+    background: #B3E5FC;
+    color: #303d53;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+.api-description {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.api-description p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.api-description strong {
+    color: #303d53;
+    font-weight: 600;
+}
+
+/* API Links */
+.api-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.api-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.api-link.primary {
+    background: #303d53;
+    color: white;
+}
+
+.api-link.primary:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(48, 61, 83, 0.2);
+}
+
+.api-link.secondary {
+    background: #f1f5f9;
+    color: #303d53;
+    border-color: #e2e8f0;
+}
+
+.api-link.secondary:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(48, 61, 83, 0.1);
+}
+
+/* Acknowledgment Section */
+.acknowledgment-section {
+    margin: 2rem 0;
+}
+
+.acknowledgment-title {
+    color: #303d53;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.acknowledgment-text {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .credits-page {
+        padding: 1rem;
+    }
+    
+    .credits-container {
+        padding: 2rem;
+    }
+    
+    .credits-title {
+        font-size: 2rem;
+    }
+    
+    .api-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .api-title {
+        font-size: 1.5rem;
+    }
+    
+    .api-links {
+        justify-content: center;
+    }
+    
+    .api-link {
+        flex: 1;
+        text-align: center;
+        min-width: 140px;
+    }
+}

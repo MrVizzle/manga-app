@@ -1,0 +1,16 @@
+/* App.css or a global CSS file */
+.manga-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.manga-card img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.manga-card h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+}

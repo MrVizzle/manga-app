@@ -1,0 +1,44 @@
+/* Title styling */
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #B3E5FC; /* Pastel Blue */
+  margin-right: auto;
+  text-decoration: none;
+}
+
+/* Navigation links styling */
+.nav-link {
+  margin-left: 20px;
+  font-weight: 500;
+  color: #B3E5FC !important; /* Pastel Blue */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  color: #ffffff !important; /* White on hover */
+  text-decoration: underline;
+}
+
+/* Dropdown menu items */
+.dropdown-item {
+  color: #B3E5FC;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: inherit;
+}
+
+.profile-avatar-nav {
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-avatar-nav:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: #B3E5FC;
+}
