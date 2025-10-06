@@ -18,7 +18,8 @@ Users can search for manga, browse details, and save favorites.
 Make sure you have installed:
 - [Node.js](https://nodejs.org/) (v16+ recommended)  
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)  
-- A free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account  
+- A free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account
+- An [OpenAI API key](https://platform.openai.com/account/api-keys) for GPT-powered recommendations
 
 ---
 
